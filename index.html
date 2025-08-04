@@ -15,25 +15,26 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       height: 100vh;
     }
 
     h1 {
       font-size: 4em;
-      margin-bottom: 0.2em;
+      margin: 0.2em 0;
     }
 
-    h2 {
-      font-size: 1.5em;
-      margin-top: 0;
-      margin-bottom: 0.2em;
+    .subtitle {
+      font-size: 1.4em;
+      margin: 0.2em 0;
+      color: #F5C443;
     }
 
-    h3 {
+    .message {
       font-size: 1.2em;
       color: #a3a8ff;
       font-style: italic;
-      margin-bottom: 1.5em;
+      margin: 1em 0 2em 0;
     }
 
     .btn {
@@ -53,20 +54,34 @@
       background-color: #e0b93c;
     }
 
+    .notes {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-top: 1em;
+      line-height: 1.6;
+    }
+
     footer {
       position: absolute;
       bottom: 20px;
       width: 100%;
       font-size: 0.8em;
-      color: #ccc;
+      color: #888;
     }
   </style>
 </head>
 <body>
   <h1>ANULODY™</h1>
-  <h2>Powered by YOUS2739™</h2>
-  <h3><em>The Light You Hear™</em></h3>
-  <a href="anubis.html" class="btn">Enter the Temple</a>
+  <div class="subtitle">Powered by YOUS2739™</div>
+  <div class="message">The Light You Hear™</div>
+  <a href="anubis.html" class="btn">🔘 Enter the Temple</a>
+
+  <div class="notes">
+    <strong>ANULODY™</strong> → The Brand<br>
+    <strong>Powered by YOUS2739™</strong> → The Engine<br>
+    <strong>The Light You Hear™</strong> → The Message<br>
+    <strong>🔘 Enter the Temple</strong> → Leads to ANUBIS (the Inner Gate)
+  </div>
 
   <footer>
     Founder & Owner, ANULODY™<br>
