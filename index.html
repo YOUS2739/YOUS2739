@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ANULODY | Open the Gate</title>
-
-  <!-- Premium Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <title>YOUS2739 — The Gate</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      height: 100vh;
-      background: linear-gradient(145deg, #050505, #0f1c2d);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background-color: #0A1A3A;
       font-family: 'Cormorant Garamond', serif;
-    }
-
-    .hero h1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       color: gold;
-      font-size: 4rem;
-      text-shadow: 0 0 10px rgba(255, 215, 0, 0.4), 0 0 25px rgba(255, 215, 0, 0.2);
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+    }
+
+    .hero img {
+      width: 80%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 0 50px rgba(255, 215, 0, 0.3);
+      transition: transform 1s ease-in-out;
+    }
+
+    .hero img:hover {
+      transform: scale(1.03);
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-top: 30px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px gold, 0 0 30px #FFD700;
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #FFD700aa;
+    }
+
+    .button {
+      margin-top: 40px;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      font-weight: bold;
+      border: 2px solid gold;
+      background: transparent;
+      color: gold;
+      border-radius: 40px;
       cursor: pointer;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.4s ease;
     }
 
-    .hero h1:hover {
+    .button:hover {
+      background: gold;
+      color: #0A1A3A;
+      box-shadow: 0 0 20px gold;
       transform: scale(1.05);
-      text-shadow: 0 0 20px gold, 0 0 40px #d4af37;
     }
 
-    .hero h1:active {
-      transform: scale(0.96);
+    @keyframes pulse {
+      0% { opacity: 0.9; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.02); }
+      100% { opacity: 0.9; transform: scale(1); }
     }
   </style>
 </head>
-
 <body>
   <div class="hero">
-    <h1 onclick="openGate()">Open the Gate</h1>
+    <img src="AN_CloseAngle_2.png" alt="Temple Gate">
   </div>
+  <h1>Open the Gate</h1>
+  <p>This is where the music is reborn</p>
+  <button class="button" onclick="playSoundAndGo()">Enter</button>
 
+  <audio id="gateSound" src="gate-open.mp3" preload="auto"></audio>
+  
   <script>
-    function openGate() {
-      window.location.href = "anubis.html";
-    }
-  </script>
-</body>
-</html>
-
+    function playSoundAndGo() {
+      const sound =
