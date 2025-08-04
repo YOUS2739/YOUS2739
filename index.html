@@ -6,37 +6,46 @@
   <title>ANULODY™</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      background-color: #0A1A3A;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
       font-family: 'Cormorant Garamond', serif;
+      background-color: #0A1A3A;
       color: #F5C443;
-      text-align: center;
+    }
+
+    body {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      height: 100vh;
+      text-align: center;
+      padding: 4vh 2vw;
     }
 
     h1 {
       font-size: 4em;
-      margin: 0.2em 0;
       font-weight: 700;
+      margin-bottom: 0.4em;
     }
 
     .subtitle {
-      font-size: 1.5em;
-      font-weight: 700;
-      margin: 0.2em 0;
+      font-size: 1.6em;
+      font-weight: 600;
+      margin-bottom: 0.3em;
       color: #F5C443;
     }
 
     .message {
-      font-size: 1.2em;
+      font-size: 1.3em;
       color: #a3a8ff;
       font-style: italic;
-      margin: 1em 0 2em 0;
+      margin-bottom: 2.5em;
     }
 
     .btn {
@@ -48,8 +57,9 @@
       border-radius: 6px;
       font-size: 1em;
       cursor: pointer;
-      transition: background-color 0.3s;
       text-decoration: none;
+      transition: background-color 0.3s;
+      margin-bottom: 2.5em;
     }
 
     .btn:hover {
@@ -57,37 +67,38 @@
     }
 
     .notes {
-      font-size: 0.95em;
+      font-size: 1em;
       color: #d5d8ff;
-      margin-top: 1.5em;
       line-height: 1.6;
     }
 
     footer {
-      position: absolute;
-      bottom: 20px;
-      width: 100%;
-      font-size: 0.8em;
+      font-size: 0.9em;
       color: #888;
+      margin-top: 3em;
     }
   </style>
 </head>
 <body>
-  <h1>ANULODY™</h1>
-  <div class="subtitle">Powered by YOUS2739™</div>
-  <div class="message">The Light You Hear™</div>
-  <a href="anubis.html" class="btn">Enter the Temple</a>
 
-  <div class="notes">
-    ANULODY™ → The Brand<br>
-    Powered by YOUS2739™ → The Engine<br>
-    The Light You Hear™ → The Message<br>
-    Enter the Temple → Leads to ANUBIS (the Inner Gate)
+  <div>
+    <h1>ANULODY™</h1>
+    <div class="subtitle">Powered by YOUS2739™</div>
+    <div class="message">The Light You Hear™</div>
+    <a href="anubis.html" class="btn">Enter the Temple</a>
+
+    <div class="notes">
+      ANULODY™ → The Brand<br>
+      Powered by YOUS2739™ → The Engine<br>
+      The Light You Hear™™ → The Message<br>
+      Enter the Temple → Leads to ANUBIS (the Inner Gate)
+    </div>
   </div>
 
   <footer>
     Founder & Owner, ANULODY™<br>
     © 2025 ANULODY. All rights reserved.
   </footer>
+
 </body>
 </html>
