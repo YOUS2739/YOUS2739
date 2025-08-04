@@ -2,90 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>YOUS2739 — The Gate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open the Gate | ANULODY™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background-color: #0A1A3A;
-      font-family: 'Cormorant Garamond', serif;
+      padding: 0;
+      background: radial-gradient(ellipse at center, #000814 0%, #000000 100%);
+      color: gold;
+      font-family: 'Cinzel Decorative', serif;
+      text-align: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
       height: 100vh;
-      color: gold;
-      text-align: center;
       overflow: hidden;
     }
 
-    .hero {
-      position: relative;
-    }
-
-    .hero img {
-      width: 80%;
-      max-width: 800px;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 0 50px rgba(255, 215, 0, 0.3);
-      transition: transform 1s ease-in-out;
-    }
-
-    .hero img:hover {
-      transform: scale(1.03);
-    }
-
     h1 {
-      font-size: 4em;
-      margin-top: 30px;
-      letter-spacing: 2px;
-      text-shadow: 0 0 10px gold, 0 0 30px #FFD700;
-      animation: pulse 3s ease-in-out infinite;
+      font-size: 3.5em;
+      margin-bottom: 0.2em;
+      animation: glow 2s infinite alternate;
     }
 
     p {
       font-size: 1.2em;
-      margin-top: 10px;
-      color: #FFD700aa;
+      color: #c0a060;
+      margin-bottom: 2em;
     }
 
-    .button {
-      margin-top: 40px;
-      padding: 15px 30px;
-      font-size: 1.1em;
-      font-weight: bold;
-      border: 2px solid gold;
+    .anubis-image {
+      max-width: 280px;
+      margin: 0 auto 2em;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .back-btn {
+      padding: 14px 30px;
       background: transparent;
+      border: 2px solid gold;
       color: gold;
-      border-radius: 40px;
+      font-size: 1em;
       cursor: pointer;
       transition: all 0.4s ease;
     }
 
-    .button:hover {
+    .back-btn:hover {
       background: gold;
-      color: #0A1A3A;
-      box-shadow: 0 0 20px gold;
-      transform: scale(1.05);
+      color: black;
     }
 
-    @keyframes pulse {
-      0% { opacity: 0.9; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.02); }
-      100% { opacity: 0.9; transform: scale(1); }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px gold; }
+      to { text-shadow: 0 0 30px #ffdf70, 0 0 60px gold; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <img src="AN_CloseAngle_2.png" alt="Temple Gate">
-  </div>
-  <h1>Open the Gate</h1>
-  <p>This is where the music is reborn</p>
-  <button class="button" onclick="playSoundAndGo()">Enter</button>
 
-  <audio id="gateSound" src="gate-open.mp3" preload="auto"></audio>
-  
-  <script>
-    function playSoundAndGo() {
-      const sound =
+  <img src="anubis_main.png" alt="Anubis Guardian" class="anubis-image" />
+  <h1>Welcome to the Temple</h1>
+  <p>This is where music is reborn. This is where your soul begins to sing.</p>
+  <button class="back-btn" onclick="window.location.href='index.html'">Back to Portal</button>
+
+</body>
+</html>
