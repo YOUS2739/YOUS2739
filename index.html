@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ANULODY™</title>
   <style>
     body {
+      background-color: #0b0e2c; /* Deep navy */
+      color: #f1c24f; /* Golden glow */
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #0A1A3A;
-      color: gold;
-      font-family: 'Cormorant Garamond', serif;
+      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       height: 100vh;
-      text-align: center;
     }
 
-    .line {
-      font-size: 1.8em;
-      margin: 15px 0;
-      animation: fadeInUp 1.5s ease-in-out;
-    }
-
-    .brand {
-      font-size: 2.5em;
+    h1 {
+      font-size: 3.5em;
       font-weight: bold;
-      letter-spacing: 2px;
-      margin-bottom: 30px;
-      text-shadow: 0 0 10px gold;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #e1a627;
+      margin-bottom: 0.5em;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      color: #c0c0ff;
+      font-style: italic;
+      margin-bottom: 2em;
     }
 
     .button {
-      margin-top: 30px;
-      padding: 12px 28px;
-      font-size: 1.2em;
-      border-radius: 30px;
-      border: 2px solid gold;
-      background: transparent;
-      color: gold;
+      padding: 12px 24px;
+      background-color: #f1c24f;
+      color: #0b0e2c;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
       transition: all 0.3s ease;
+      font-size: 1em;
     }
 
     .button:hover {
-      background-color: gold;
-      color: #0A1A3A;
-      box-shadow: 0 0 15px gold;
-      transform: scale(1.05);
+      background-color: #fff0cc;
+      color: #0b0e2c;
     }
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <div class="brand">ANULODY™ → The Brand</div>
-  <div class="line">Powered by YOUS2739™ → The Engine</div>
-  <div class="line">The Light You Hear™ → The Message</div>
+  <h1>ANULODY™</h1>
+  <h2>Powered by YOUS2739™</h2>
+  <h3>The Light You Hear™</h3>
 
-  <a href="anubis.html">
-    <button class="button">🔘 Enter the Temple</button>
-  </a>
+  <button class="button">Enter the Temple</button>
+
+  <footer>
+    Founder & Owner, ANULODY™<br>
+    © 2025 ANULODY. All rights reserved.
+  </footer>
 
 </body>
 </html>
