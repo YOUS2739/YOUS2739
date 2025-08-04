@@ -1,32 +1,45 @@
-<style>
-  body {
-    margin: 0;
-    background-color: #0A1A3A;
-    font-family: 'Cormorant Garamond', serif;
-  }
-
-  .hero {
-    background: url('AN_CloseAngle_2.png') center center / cover no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFD700;
-    text-shadow: 0 0 15px #FFD700;
-  }
-
-  .hero h1 {
-    font-size: 3.5rem;
-    letter-spacing: 2px;
-    animation: glow 2s ease-in-out infinite alternate;
-  }
-
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFAA00;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANULODY™ – Open the Gate</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0A1A3A;
+      font-family: 'Cormorant Garamond', serif;
     }
-    to {
-      text-shadow: 0 0 20px #FFDA44, 0 0 35px #FFCC00, 0 0 45px #FFAA00;
+
+    .hero {
+      background: url('AN_CloseAngle_2.png') center center / cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFD700;
+      text-shadow: 0 0 15px #FFD700;
     }
-  }
-</style>
+
+    .hero h1 {
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFAA00;
+      }
+      to {
+        text-shadow: 0 0 20px #FFDA44, 0 0 35px #FFCC00, 0 0 45px #FFAA00;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Open the Gate</h1>
+  </div>
+</body>
+</html>
