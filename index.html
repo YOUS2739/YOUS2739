@@ -2,74 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Open the Gate | ANULODY™</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <title>ANULODY™</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: radial-gradient(ellipse at center, #000814 0%, #000000 100%);
+      background-color: #0A1A3A;
       color: gold;
-      font-family: 'Cinzel Decorative', serif;
-      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       height: 100vh;
-      overflow: hidden;
+      text-align: center;
     }
 
-    h1 {
-      font-size: 3.5em;
-      margin-bottom: 0.2em;
-      animation: glow 2s infinite alternate;
+    .line {
+      font-size: 1.8em;
+      margin: 15px 0;
+      animation: fadeInUp 1.5s ease-in-out;
     }
 
-    p {
+    .brand {
+      font-size: 2.5em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px gold;
+    }
+
+    .button {
+      margin-top: 30px;
+      padding: 12px 28px;
       font-size: 1.2em;
-      color: #c0a060;
-      margin-bottom: 2em;
-    }
-
-    .anubis-image {
-      max-width: 280px;
-      margin: 0 auto 2em;
-      animation: fadeIn 3s ease-in-out;
-    }
-
-    .back-btn {
-      padding: 14px 30px;
-      background: transparent;
+      border-radius: 30px;
       border: 2px solid gold;
+      background: transparent;
       color: gold;
-      font-size: 1em;
       cursor: pointer;
-      transition: all 0.4s ease;
+      transition: all 0.3s ease;
     }
 
-    .back-btn:hover {
-      background: gold;
-      color: black;
+    .button:hover {
+      background-color: gold;
+      color: #0A1A3A;
+      box-shadow: 0 0 15px gold;
+      transform: scale(1.05);
     }
 
-    @keyframes glow {
-      from { text-shadow: 0 0 10px gold; }
-      to { text-shadow: 0 0 30px #ffdf70, 0 0 60px gold; }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
 
-  <img src="anubis_main.png" alt="Anubis Guardian" class="anubis-image" />
-  <h1>Welcome to the Temple</h1>
-  <p>This is where music is reborn. This is where your soul begins to sing.</p>
-  <button class="back-btn" onclick="window.location.href='index.html'">Back to Portal</button>
+  <div class="brand">ANULODY™ → The Brand</div>
+  <div class="line">Powered by YOUS2739™ → The Engine</div>
+  <div class="line">The Light You Hear™ → The Message</div>
+
+  <a href="anubis.html">
+    <button class="button">🔘 Enter the Temple</button>
+  </a>
 
 </body>
 </html>
